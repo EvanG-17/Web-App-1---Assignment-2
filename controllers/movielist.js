@@ -7,10 +7,10 @@ const movielistStore = require('../models/movielist-store');
 const movielist = {
   index(request, response) {
     const movielistId = request.params.id;
-    logger.debug('movielist id = ' + movielistId);
+    logger.debug('Movielist id = ' + movielistId);
     const viewData = {
-      movie: 'movielist',
-      movielist: movielistStore.getmovielist(movielistId),
+      movie: 'Movielist',
+      movielist: movielistStore.getMovielist(movielistId),
     };
     logger.info('about to render', viewData.movielist);
     response.render('movielist', viewData);
@@ -18,17 +18,17 @@ const movielist = {
     deleteMovie(request, response) {
     const movielistId = request.params.id;
     const movieId = request.params.movieid;
-    logger.debug(`Deleting Movie ${movieId} from movielist ${movielistId}`);
+    logger.debug(`Deleting Movie ${movieId} from Movielist ${movielistId}`);
     movielistStore.removeMovie(movielistId, movieId);
     response.redirect('/movielist/' + movielistId);
   },
     addMovie(request, response) {
     const movielistId = request.params.id;
-    const movielist = movielistStore.getmovielist(movielistId);
+    const movielist = movielistStore.getMovielist(movielistId);
     const newMovie = {
       id: uuid(),
-      Movie: request.body.Movie,
-      director: request.body.Director,
+      movie: request.body.movie,
+      director: request.body.director,
       genre: request.body.genre,
       duration: request.body.duration
     };

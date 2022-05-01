@@ -1,8 +1,4 @@
-/* If you're feeling fancy you can add interactivity 
-    to your site with Javascript */
 
-// prints "hi" in the browser's dev tools console
-console.log("Hello from the Web App Dev 1 lab!");
 
 const greenbtn = document.querySelector(".green");
 
@@ -31,7 +27,7 @@ redbtn &&
     let username = prompt("What's your name?");
     welcomeUserDiv.style.display = "block";
     document.querySelector("#welcomeuser").innerHTML = `<p> Hello, ${username}, 
-    looking forward to hearing your playlists! Click this message to close it.</p>`;
+    looking forward to hearing your movielists! Click this message to close it.</p>`;
     welcomeUserDiv.style.cursor = "pointer";
   });
 
@@ -58,6 +54,6 @@ ratebtn &&
   }
 });
 
-$(".delsong").click(() => confirm('Really delete this song?'))
+$(".delmovie").click(() => confirm('Really delete this movie?'))
 
-$(".delplaylist").click(() => confirm('Really delete this playlist?'))
+$(".delmovielist").click(() => confirm('Really delete this movielist?'))

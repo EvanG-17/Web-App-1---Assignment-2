@@ -30,7 +30,7 @@ const movielistStore = {
   },
 
   addMovie(id, movie) {
-    const playlist = this.getMovielist(id);
+    const movielist = this.getMovielist(id);
     movielist.movies.push(movie);
   },
 

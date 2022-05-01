@@ -4,7 +4,7 @@
 const logger = require('../utils/logger');
 const uuid = require('uuid');
 
-const playlistStore = require('../models/playlist-store.js');
+const movielistStore = require('../models/movielist-store.js');
 
 // create dashboard object
 const dashboard = {
@@ -17,30 +17,30 @@ const dashboard = {
     
     // create view data object (contains data to be sent to the view e.g. page title)
     const viewData = {
-      title: 'Playlist App Dashboard',
-      playlists: playlistStore.getAllPlaylists(),
+      title: 'movielist App Dashboard',
+      movielists: movielistStore.getAllmovielists(),
     };
     
     // render the dashboard view and pass through the data
-    logger.info('about to render', viewData.playlists);
+    logger.info('about to render', viewData.movielists);
     response.render('dashboard', viewData);
   },
   
-  deletePlaylist(request, response) {
-    const playlistId = request.params.id;
-    logger.debug(`Deleting Playlist ${playlistId}`);
-    playlistStore.removePlaylist(playlistId);
+  deletemovielist(request, response) {
+    const movielistId = request.params.id;
+    logger.debug(`Deleting movielist ${movielistId}`);
+    movielistStore.removemovielist(movielistId);
     response.redirect('/dashboard');
   },
   
-  addPlaylist(request, response) {
-    const newPlayList = {
+  addmovielist(request, response) {
+    const newmovielist = {
       id: uuid(),
       title: request.body.title,
       duration: request.body.duration,
-      songs: [],
+      movies: [],
     };
-    playlistStore.addPlaylist(newPlayList);
+    movielistStore.addmovielist(newmovielist);
     response.redirect('/dashboard');
   },
 };

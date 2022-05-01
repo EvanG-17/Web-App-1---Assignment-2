@@ -1,24 +1,4 @@
 {
   "movielistCollection": [
-    {
-      "id": "765ef65e-eda9-4f93-82ec-82c46e2be16a",
-      "title": "s",
-      "duration": "s",
-      "movies": [
-        {
-          "id": "e731dbb7-60b5-4df3-8b61-6906f821a97d",
-          "director": "s",
-          "genre": "s",
-          "duration": "s"
-        },
-        {
-          "id": "17f7efa1-e23e-4553-9f1a-e23a5470a659",
-          "director": "Chrisopher Nolan",
-          "genre": "Action",
-          "duration": "140",
-          "title": "ok"
-        }
-      ]
-    }
   ]
 }

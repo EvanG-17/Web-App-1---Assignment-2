@@ -2,6 +2,7 @@
 'use strict';
 
 // import all required modules
+const cookieParser = require('cookie-parser');
 const express = require("express");
 const logger = require('./utils/logger');
 const exphbs = require('express-handlebars');
@@ -12,7 +13,7 @@ const app = express();
 
 // static files output to public folder
 app.use(express.static("public"));
-
+app.use(cookieParser());
 app.use(bodyParser.urlencoded({ extended: false, }));
 
 // use handlebars as view engine

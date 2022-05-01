@@ -49,6 +49,12 @@ editMovie(id, movieId, updatedMovie) {
     movies[index].genre = updatedMovie.genre;
     movies[index].duration = updatedMovie.duration;
   }
+  
+ 
+getUserMovielists(userid) {
+    return this.store.findBy(this.collection, { userid: userid });
+  },
+
 };
 
 module.exports = movielistStore;

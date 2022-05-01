@@ -34,20 +34,22 @@ const dashboard = {
     response.redirect('/dashboard');
   },
   
- addMovielist(request, response) {
+  addMovielist(request, response) {
+    const date = new Date();
     const loggedInUser = accounts.getCurrentUser(request);
     const newMovieList = {
       id: uuid(),
       userid: loggedInUser.id,
       title: request.body.title,
       picture: request.files.picture,
+      date: date,
       movies: []
     };
     logger.debug("Creating a new Movielist" + newMovieList);
     movielistStore.addMovielist(newMovieList, function() {
       response.redirect("/dashboard");
     });
-},
+  }
 };
 
 // export the dashboard module

@@ -1,3 +1,10 @@
+{{#unless playlist.songs}}
+  <h3 class="ui center aligned message">Common! You really should start adding some movies. Its quiet in here.. too quiet....</h3>
+{{/unless}}
+
+{{#if movielist.movies}}
+
+
 <table class="ui fixed striped table">
   <thead>
     <tr>
@@ -54,3 +61,5 @@
 <button class="ui blue button" id="rateit">
   Rate it! <i class="star icon"></i>
 </button>
+
+{{/if}}

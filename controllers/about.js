@@ -18,11 +18,15 @@ const about = {
     const viewData = {
       title: 'About the Movie App',
       developers: developerStore.getAllDevelopers(),
+      comments: commentStore.getAllComments(),
+      fullname: loggedInUser.firstName + ' '+ loggedInUser.lastname;
+      
     };
     
     // render the about view and pass through the data
     response.render('about', viewData);
-  },
+  }
+
 };
 
 // export the about module

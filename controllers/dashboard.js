@@ -10,21 +10,22 @@ const movielistStore = require('../models/movielist-store.js');
 const dashboard = {
   
   // index method - responsible for creating and rendering the view
-  
-    
-    // display confirmation message in log
+    index(request, response) {
     logger.info('dashboard rendering');
-    
-    // create view data object (contains data to be sent to the view e.g. page title)
+    const loggedInUser = accounts.getCurrentUser(request);
+    if (loggedInUser) {
     const viewData = {
-      title: 'Movielist App Dashboard',
-      movielists: movielistStore.getAllMovielists(),
+      title: 'Movielist Dashboard',
+      movielists: movielistStore.getUserMovielists(loggedInUser.id),
+      fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
     };
-    
-    // render the dashboard view and pass through the data
-    logger.info('about to render', viewData.movielists);
+    logger.info('about to render' + viewData.movielists);
     response.render('dashboard', viewData);
+    }
+    else response.redirect('/');
   },
+  
+
   
   deleteMovielist(request, response) {
     const movielistId = request.params.id;

@@ -3,6 +3,7 @@
 // import all required modules
 const logger = require('../utils/logger');
 const movielistStore = require('../models/movielist-store.js');
+const accounts = require ('./accounts.js');
 
 // create start object
 const start = {

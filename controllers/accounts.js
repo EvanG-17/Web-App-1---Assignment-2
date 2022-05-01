@@ -10,7 +10,7 @@ const accounts = {
   //index function to render index page
   index(request, response) {
     const viewData = {
-      title: 'Login or Signup',
+      title: 'MoviePlaylist : Sign Up or Login',
     };
     response.render('index', viewData);
   },

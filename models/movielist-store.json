@@ -12,21 +12,6 @@
           "duration": "100"
         }
       ]
-    },
-    {
-      "id": "b6ed94f5-0354-4e11-921c-6d0bba4e7733",
-      "userid": "93830bbb-92d9-41bc-9974-fac139b2e9c0",
-      "title": "s",
-      "picture": "http://res.cloudinary.com/dt4seaeeg/image/upload/v1651428446/gjhlfmogpcfblu51fwq7.webp",
-      "date": "2022-05-01T18:07:25.055Z",
-      "movies": [
-        {
-          "id": "f4f877c3-6215-4101-ada8-279475031d18",
-          "director": "s",
-          "genre": "s",
-          "duration": "s"
-        }
-      ]
     }
   ]
 }

@@ -31,3 +31,12 @@ h1 {
 .ui.menu{
   background-color: #90EE90;
 }
+
+.ui.center.aligned.middle.aligned.segment{
+  background-color: #CBC3E3;
+}
+
+.ui.stacked.segment.form{
+  background-color: #CBC3E3;
+}
+

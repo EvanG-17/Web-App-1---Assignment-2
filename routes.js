@@ -23,6 +23,8 @@ router.post('/movielist/:id/addmovie', movielist.addMovie);
 router.get('/dashboard/deletemovielist/:id', dashboard.deleteMovielist);
 router.post('/dashboard/addmovielist', dashboard.addMovielist);
 
+router.post('/movielist/:id/updatemovie/:movieid', movielist.updateMovie);
+
 // export router module
 module.exports = router;
 

@@ -37,8 +37,18 @@ const movielistStore = {
   removeMovie(id, movieId) {
     const movielist = this.getMovielist(id);
     const movie = movielist.movies;
-    _.remove(movies, { id: movieId});
+    _.remove(movie, { id: movieId});
   },
+  
+    editMovie(id, movieId, updatedMovie) {
+    const movielist = this.getMovielist(id);
+    const movies = movielist.movies;
+    const index = movies.findIndex(movie => movie.id === movieId);
+    movies[index].title = updatedMovie.title;
+    movies[index].director = updatedMovie.director;
+    movies[index].genre = updatedMovie.genre;
+    movies[index].duration = updatedMovie.duration;
+  }
 };
 
 module.exports = movielistStore;

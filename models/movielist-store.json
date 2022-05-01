@@ -1,10 +1,17 @@
 {
   "movielistCollection": [
     {
-      "id": "34bd46a8-51d8-46e5-a267-9a9e528fb2b7",
-      "title": "Batman",
-      "duration": "135",
-      "movies": []
+      "id": "765ef65e-eda9-4f93-82ec-82c46e2be16a",
+      "title": "s",
+      "duration": "s",
+      "movies": [
+        {
+          "id": "e731dbb7-60b5-4df3-8b61-6906f821a97d",
+          "director": "s",
+          "genre": "s",
+          "duration": "s"
+        }
+      ]
     }
   ]
 }

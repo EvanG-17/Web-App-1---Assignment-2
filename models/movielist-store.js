@@ -2,6 +2,18 @@
 
 const _ = require('lodash');
 const JsonStore = require('./json-store');
+const cloudinary = require('cloudinary');
+const logger = require('../utils/logger');
+
+try {
+  const env = require('../.data/.env.json');
+  cloudinary.config(env.cloudinary);
+}
+catch(e) {
+  logger.info('You must provide a Cloudinary credentials file - see README.md');
+  process.exit(1);
+}
+
 
 const movielistStore = {
 
@@ -16,9 +28,18 @@ const movielistStore = {
     return this.store.findOneBy(this.collection, { id: id });
   },
 
-  addMovielist(movielist) {
-    this.store.add(this.collection, movielist);
-  },
+  addMovielist(movielist, response) {
+   movielist.picture.mv('tempimage', err => {
+       if (!err) {
+          cloudinary.uploader.upload('tempimage', result => {
+            console.log(result);
+            movielist.picture = result.url;
+            response();
+          });
+       }
+   });
+   this.store.add(this.collection, movielist);
+},
 
   removeMovielist(id) {
     const movielist = this.getMovielist(id);

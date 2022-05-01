@@ -35,6 +35,20 @@ const movielist = {
     movielistStore.addMovie(movielistId, newMovie);
     response.redirect('/movielist/' + movielistId);
   },
+  
+  updateMovie(request, response) {
+    const movielistId = request.params.id;
+    const movieId = request.params.movieid;
+    logger.debug("updating movie " + movieId);
+    const updatedMovie = {
+      title: request.body.title,
+      director: request.body.director,
+      genre: request.body.genre,
+      duration: request.body.duration
+    };
+    movielistStore.editMovie(movielistId, movieId, updatedMovie);
+    response.redirect('/movielist/' + movielistId);
+  }
 };
 
 module.exports = movielist;

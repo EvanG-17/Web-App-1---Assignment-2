@@ -1,24 +1,10 @@
 {
   "movielistCollection": [
     {
-      "id": "455d22dc-257a-4ad2-b8ac-e317b6bee3fe",
-      "movie": "New movielist",
-      "duration": "35",
+      "id": "34bd46a8-51d8-46e5-a267-9a9e528fb2b7",
+      "title": "Batman",
+      "duration": "135",
       "movies": []
-    },
-    {
-      "id": "66cc4812-d3b3-4cb0-bfb6-41f9885df54e",
-      "movie": "New movielist 2",
-      "duration": "35",
-      "movies": [
-        {
-          "id": "5b11dacf-9c54-4900-9fbe-7692dfb01fc6",
-          "movie": "New Movie",
-          "director": "Rosanne",
-          "genre": "Rock",
-          "duration": "5"
-        }
-      ]
     }
   ]
 }

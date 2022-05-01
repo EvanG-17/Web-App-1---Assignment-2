@@ -17,7 +17,7 @@ const dashboard = {
     
     // create view data object (contains data to be sent to the view e.g. page title)
     const viewData = {
-      title: 'movielist App Dashboard',
+      title: 'Movielist App Dashboard',
       movielists: movielistStore.getAllMovielists(),
     };
     

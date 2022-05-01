@@ -1,4 +1,17 @@
 {
   "movielistCollection": [
+    {
+      "id": "18f0d57f-41c1-49d9-8c7c-20a5018ef492",
+      "title": "Homer Test",
+      "duration": "120",
+      "movies": [
+        {
+          "id": "c18d331d-cca0-4b1c-897d-643af9de8193",
+          "director": "Homer",
+          "genre": "Test",
+          "duration": "100"
+        }
+      ]
+    }
   ]
 }

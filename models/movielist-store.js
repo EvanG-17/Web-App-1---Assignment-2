@@ -48,7 +48,7 @@ editMovie(id, movieId, updatedMovie) {
     movies[index].artist = updatedMovie.artist;
     movies[index].genre = updatedMovie.genre;
     movies[index].duration = updatedMovie.duration;
-  }
+  },
   
  
 getUserMovielists(userid) {
@@ -58,3 +58,4 @@ getUserMovielists(userid) {
 };
 
 module.exports = movielistStore;
+

@@ -3,14 +3,14 @@
 // import all required modules
 const logger = require('../utils/logger');
 const uuid = require('uuid');
-
+const accounts = require ('./accounts.js');
 const movielistStore = require('../models/movielist-store.js');
 
 // create dashboard object
 const dashboard = {
   
   // index method - responsible for creating and rendering the view
-  index(request, response) {
+  
     
     // display confirmation message in log
     logger.info('dashboard rendering');

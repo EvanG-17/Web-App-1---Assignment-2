@@ -1,4 +1,4 @@
-{{#unless playlist.songs}}
+{{#unless movielist.movies}}
   <h3 class="ui center aligned message">Common! You really should start adding some movies. Its quiet in here.. too quiet....</h3>
 {{/unless}}
 
@@ -22,7 +22,7 @@
     <tr class="fields">
       <td class="field">
         <span class="ui input">
-         <input type="text" name="title" autofocus required title = "Please include a valid Title" placeholder="Title" value = "{{title}}">
+         <input type="text" name="title" autofocus required title = "Please include a valid Title" placeholder="Movie" value = "{{Title}}">
         </span>
       </td>
       <td class="field">
@@ -32,7 +32,13 @@
       </td>
       <td class="field">
         <span class="ui input">
-          <input type="text" name="genre" autofocus required title = "Please include a valid Genre" placeholder="Genre" value = "{{genre}}">         
+            <select name="genre" id="genre">
+        <option value ="Action">Action</option>
+        <option value ="Adventure">Adventure</option>
+        <option value ="Sci-Fi">Sci-Fi</option>
+        <option value ="Kids">Kids</option>
+        <option value ="Documentary">Documentary</option>
+      </select>    
         </span>
       </td>
       <td class="field">

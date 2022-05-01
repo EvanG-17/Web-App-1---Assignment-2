@@ -22,6 +22,7 @@ let numMovies = 0;
 for (let item of movielists) {
     numMovies += item.movies.length;
 }
+    let average = (numMovies/numMovielists).toFixed(0)
     
     // display confirmation message in log
     logger.info('start rendering');

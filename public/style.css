@@ -27,3 +27,7 @@ h1 {
   font-weight:bold;
   text-transform:capitalize;
 }
+
+.ui.menu{
+  background-color: #90EE90;
+}

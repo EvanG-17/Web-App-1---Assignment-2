@@ -12,20 +12,6 @@
           "duration": "100"
         }
       ]
-    },
-    {
-      "id": "e15fae72-71b8-4e4d-817f-b08ebf5b5685",
-      "userid": "93830bbb-92d9-41bc-9974-fac139b2e9c0",
-      "title": "Batman",
-      "picture": "http://res.cloudinary.com/dt4seaeeg/image/upload/v1651424433/bmsepgnhwcr7gpp7qrdk.jpg",
-      "movies": []
-    },
-    {
-      "id": "442e5b56-ba8b-4621-a481-a7c2224cb161",
-      "userid": "93830bbb-92d9-41bc-9974-fac139b2e9c0",
-      "title": "Hello",
-      "picture": "http://res.cloudinary.com/dt4seaeeg/image/upload/v1651424472/vszrbnawm8nzif4ujmzp.jpg",
-      "movies": []
     }
   ]
 }

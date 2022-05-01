@@ -18,7 +18,7 @@ const dashboard = {
     // create view data object (contains data to be sent to the view e.g. page title)
     const viewData = {
       title: 'movielist App Dashboard',
-      movielists: movielistStore.getAllmovielists(),
+      movielists: movielistStore.getAllMovielists(),
     };
     
     // render the dashboard view and pass through the data
@@ -26,21 +26,21 @@ const dashboard = {
     response.render('dashboard', viewData);
   },
   
-  deletemovielist(request, response) {
+  deleteMovielist(request, response) {
     const movielistId = request.params.id;
-    logger.debug(`Deleting movielist ${movielistId}`);
-    movielistStore.removemovielist(movielistId);
+    logger.debug(`Deleting Movielist ${movielistId}`);
+    movielistStore.removeMovielist(movielistId);
     response.redirect('/dashboard');
   },
   
-  addmovielist(request, response) {
-    const newmovielist = {
+  addMovielist(request, response) {
+    const newMovielist = {
       id: uuid(),
       title: request.body.title,
       duration: request.body.duration,
       movies: [],
     };
-    movielistStore.addmovielist(newmovielist);
+    movielistStore.addMovielist(newMovielist);
     response.redirect('/dashboard');
   },
 };

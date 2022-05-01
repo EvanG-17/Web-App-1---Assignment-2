@@ -20,6 +20,13 @@
       "email": "test@test.com",
       "password": "test",
       "id": "93830bbb-92d9-41bc-9974-fac139b2e9c0"
+    },
+    {
+      "firstName": "Joe",
+      "lastName": "Bloggs",
+      "email": "joe@bloggs.com",
+      "password": "joebloggs",
+      "id": "bfe5ec2c-75da-4bf2-a437-cbaf01da80f6"
     }
   ]
 }

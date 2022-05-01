@@ -9,7 +9,7 @@ const movielist = {
     const movielistId = request.params.id;
     logger.debug('movielist id = ' + movielistId);
     const viewData = {
-      title: 'movielist',
+      movie: 'movielist',
       movielist: movielistStore.getmovielist(movielistId),
     };
     logger.info('about to render', viewData.movielist);
@@ -27,12 +27,12 @@ const movielist = {
     const movielist = movielistStore.getmovielist(movielistId);
     const newMovie = {
       id: uuid(),
-      title: request.body.title,
-      artist: request.body.artist,
+      Movie: request.body.Movie,
+      director: request.body.Director,
       genre: request.body.genre,
       duration: request.body.duration
     };
-    movielistStore.addSong(movielistId, newSong);
+    movielistStore.addMovie(movielistId, newMovie);
     response.redirect('/movielist/' + movielistId);
   },
 };

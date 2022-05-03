@@ -12,6 +12,21 @@
           "duration": "100"
         }
       ]
+    },
+    {
+      "id": "4a5a79cc-bfa6-4920-aeb3-cfd71faea134",
+      "userid": "46220785-5b92-4c09-b0fb-49c8fc3f4404",
+      "title": "test",
+      "picture": "http://res.cloudinary.com/dt4seaeeg/image/upload/v1651585837/ocssij4jykf3pfukfzov.jpg",
+      "date": "2022-05-03T13:50:36.754Z",
+      "movies": [
+        {
+          "id": "13a30907-0e81-4ad3-b858-bfe5d6a4957e",
+          "director": "k",
+          "genre": "k",
+          "duration": "7"
+        }
+      ]
     }
   ]
 }

@@ -27,6 +27,13 @@
       "email": "joe@bloggs.com",
       "password": "joebloggs",
       "id": "bfe5ec2c-75da-4bf2-a437-cbaf01da80f6"
+    },
+    {
+      "firstName": "Brenda",
+      "lastName": "Mullally",
+      "email": "bm@wit.ie",
+      "password": "Secret1",
+      "id": "46220785-5b92-4c09-b0fb-49c8fc3f4404"
     }
   ]
 }
